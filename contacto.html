@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | TiendaPumillas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🛒 TiendaPumillas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="formulario">
+            <h2>Datos de Envío</h2>
+            <p>Por favor, rellena el siguiente formulario para enviar tu pedido.</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="direccion">Dirección de entrega:</label>
+                    <textarea id="direccion" name="direccion" rows="3" required></textarea>
+
+                    <label for="metodo">Método de pago:</label>
+                    <select id="metodo" name="metodo">
+                        <option value="tarjeta">Tarjeta de Crédito</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="transferencia">Transferencia Bancaria</option>
+                    </select>
+
+                    <button type="submit" class="btn">Confirmar Pedido</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TiendaPumillas. Práctica de Desarrollo Web.</p>
+    </footer>
+</body>
+</html>
