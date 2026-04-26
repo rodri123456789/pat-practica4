@@ -33,29 +33,25 @@
                         <th>Precio Unitario</th>
                         <th>Cantidad</th>
                         <th>Subtotal</th>
-                    </tr>
+                        <th>Acción</th> </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Auriculares Pro</td>
-                        <td>$50.00</td>
-                        <td>2</td>
-                        <td>$100.00</td>
-                    </tr>
-                    <tr>
-                        <td>Ratón Inalámbrico</td>
-                        <td>$25.00</td>
-                        <td>1</td>
-                        <td>$25.00</td>
-                    </tr>
-                </tbody>
+                <tbody id="tabla-carrito">
+                    </tbody>
                 <tfoot>
                     <tr>
-                        <th colspan="3">Total a Pagar:</th>
-                        <th>$125.00</th>
+                        <th colspan="4" style="text-align: right;">Total a Pagar:</th>
+                        <th id="total-carrito">0.00 €</th>
                     </tr>
                 </tfoot>
             </table>
+            <br>
+            <a href="contacto.html" class="btn">Proceder al pago</a>
+
+            <script src="app.js"></script>
+            <script>
+                // Llamamos a la función nada más cargar esta página
+                cargarCarrito();
+            </script>
             
             <a href="contacto.html" class="btn">Proceder al pago</a>
         </section>
